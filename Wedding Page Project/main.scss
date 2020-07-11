@@ -1,0 +1,302 @@
+$bg-color: rgb(240, 240, 240);
+$main-color: rgb(50, 50, 50);
+$secondary-color: rgb(100, 100, 100);
+$tertiary-color: rgb(139, 139, 139);
+
+
+* {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: $bg-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $main-color;
+    text-decoration: none;
+}
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+
+    #navbar {
+        max-height: 100vh;
+        border: solid $main-color;
+        padding: 2em 2em 0 2em;
+
+        .nav-name {
+            font-family: amsterdam;
+            font-size: 2.3em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 0 0 2em 0;
+        }
+        .logo {
+            margin: 3em 1em 0.5em 1em;
+            width: 90%;
+        }
+        #nav-list {
+            text-align: center;
+            line-height: 5em;
+
+
+            .list-content {
+                font-size: 1.4em;
+
+                a:hover {
+                    color: $tertiary-color;
+                }
+            }
+        }
+        #main-footer {
+            text-align: center;
+            margin-top: 8rem;
+            bottom: 1em;
+            .socials {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 1.5em;
+
+                .fab {
+                    color: $tertiary-color;
+                }
+                    .fab:hover {
+                        color: $main-color;
+                    }
+            }
+            .footer-text p {
+                margin-bottom: 1em;
+                color: $tertiary-color;
+
+                a {
+                    color: $tertiary-color;
+                    text-decoration: underline;
+                }
+
+                a:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+#carousel, #portfolio {
+    box-sizing: border-box;
+    border: solid $main-color;
+    position: relative;
+
+    .mySlides {
+        display: none;
+        width: 80vw;
+        height: 100vh;
+    }
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $main-color;
+    background-color: $bg-color;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: $tertiary-color;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#about, #packages, #contact {
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: solid $main-color;
+
+    .about-header, .packages-header, .contact-header {
+        padding: 1rem 0 2rem 0;
+        background-color: $main-color;
+        text-align: center;
+
+
+        .about-title, .packages-title, .contact-title {
+            color: $bg-color;
+            background-color: $main-color;
+            font-size: 2.5rem;
+        }
+
+        .bottom-line {
+            background-color: $bg-color;
+            height: 0.2em;
+            width: 15em;
+            margin: 0.5em auto 0 auto;
+        }
+    }
+    .weddings-section, .equipment-section, .package {
+        padding: 2em;
+
+        .weddings-title, .equipment-title, .package-title {
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 2em;
+        }
+
+        .weddings-content, .equipment-content, p {
+            line-height: 2em;
+            font-size: 1.2em;
+            margin: 0 auto 0 auto;
+            width: 58vw;
+        }
+    }
+    .equipment-images {
+        padding: 2em;
+        margin-bottom: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 31.4%);
+        grid-template-rows: repeat(3, 52%);
+        justify-content: center;
+
+        img {
+            border: solid $main-color;
+        }
+    }
+}
+#portfolio {
+    overflow-y: auto;
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: 0;
+
+         div  {
+            background-color: $tertiary-color;
+            height: 20em;
+            background-size: cover;
+            transform: all 1s ease-in;
+
+        }
+    }
+}
+.a {background: url(https://www.wallpapers4u.org/wp-content/uploads/wedding_bouquet_groom_bride_1380_1920x1080.jpg);}
+.b {background: url(https://i.pinimg.com/originals/b0/bc/d8/b0bcd8bfda3014e71bf731ef828a74ca.jpg);}
+.c {background: url(https://i.pinimg.com/originals/c7/4c/34/c74c34a04adbe1a32bcc97c3ef826958.jpg);}
+.d {background: url(https://c1.wallpaperflare.com/preview/32/593/199/couple-wedding-reflection-marriage.jpg);}
+.e {background: url(https://wallpapermemory.com/uploads/320/bride-in-wedding-dress-wallpaper-1080p-465898.jpg);}
+.f {background: url(https://www.wallpaperbetter.com/wallpaper/976/588/856/couple-wedding-1080P-wallpaper-middle-size.jpg);}
+.g {background: url(https://www.byrnesagency.com/wp-content/uploads/2011/11/white-wedding.jpg);}
+.h {background: url(https://media-api.xogrp.com/images/68a3d43a-42bb-11e5-8d16-12313d2529c5~rs_729.h);}
+.i {background: url(https://4.bp.blogspot.com/-oU2dMAxJq0E/WG5cCWiXoeI/AAAAAAAAAKI/rXt-TjtLJtUPpi4WYddlkmjCKUNEDIGyQCLcB/s1600/wallpaper%2Bwedding%2Bon%2Bthe%2Bsunset.jpeg);}
+.j {background: url(https://i.pinimg.com/originals/2a/26/af/2a26afadb5c623d5af41d5fc35fb998b.jpg);}
+.k {background: url(https://www.weddinginspirasi.com/wp-content/uploads/2015/01/romantic-destination-wedding-secrets-resorts-spas-huatulco-mexico-couple-resort-pool-bride-groom-sunset-picture.jpg);}
+.l {background: url(https://s3-ap-southeast-2.amazonaws.com/pdbmedia/2012/04/bride-and-groom-wedding-sunset.jpg);}
+.m {background: url(/man-and-woman-standing-beside-carriage-3204420.jpg);}
+.n {background: url(/man-in-gray-dress-suit-jacket-embraces-woman-wearing-wedding-931796.jpg);}
+.o {background: url(/a-photo-of-a-bride-and-groom-3684809.jpg);}
+.container div:hover {
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.packages-img {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+
+    img {
+        border: solid $main-color;
+        width: 30%;
+        height: 20%;
+    }
+}
+.contact-content {
+        padding: 5rem;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-areas: 'name email' 'subject phone' 'message message';
+        grid-gap: 1.2rem;
+        margin-bottom: 1.2rem;
+
+        .name-input {
+            grid-area: name;
+            margin: 1rem 0;
+        }
+        .subject-input {
+            grid-area: subject;
+            margin: 1rem 0;
+        }
+        .email-input {
+            grid-area: email;
+            margin: 1rem 0;
+        }
+        .phone-input {
+            grid-area: phone;
+            margin: 1rem 0;
+        }
+        .message-input {
+            grid-area: message;
+            margin: 1rem 0;
+            height: 5rem;
+        }
+
+        .text-input {
+            padding: 0.5rem 1rem;
+        }
+
+    }
+
+.button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+
+    button[type='submit'] {
+        width: 10%;
+        padding: 0.4rem;
+        cursor: pointer;
+    }
+}
+button:hover {
+    transition: 0.5s;
+    background: $main-color;
+    color: $bg-color;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 8rem;
+    padding: 3.2rem;
+    height: 15rem;
+    background: $main-color;
+
+    div, .fas, a, h3, p {
+        color: $bg-color;
+        background: $main-color;
+        text-decoration: none;
+    }
+}
+#contact {overflow: hidden;}

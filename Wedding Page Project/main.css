@@ -1,0 +1,410 @@
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #323232;
+  text-decoration: none;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 80vw;
+      grid-template-columns: 20vw 80vw;
+}
+
+#container #navbar {
+  max-height: 100vh;
+  border: solid #323232;
+  padding: 2em 2em 0 2em;
+}
+
+#container #navbar .nav-name {
+  font-family: amsterdam;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+
+#container #navbar .logo {
+  margin: 3em 1em 0.5em 1em;
+  width: 90%;
+}
+
+#container #navbar #nav-list {
+  text-align: center;
+  line-height: 5em;
+}
+
+#container #navbar #nav-list .list-content {
+  font-size: 1.4em;
+}
+
+#container #navbar #nav-list .list-content a:hover {
+  color: #8b8b8b;
+}
+
+#container #navbar #main-footer {
+  text-align: center;
+  margin-top: 8rem;
+  bottom: 1em;
+}
+
+#container #navbar #main-footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 1.5em;
+}
+
+#container #navbar #main-footer .socials .fab {
+  color: #8b8b8b;
+}
+
+#container #navbar #main-footer .socials .fab:hover {
+  color: #323232;
+}
+
+#container #navbar #main-footer .footer-text p {
+  margin-bottom: 1em;
+  color: #8b8b8b;
+}
+
+#container #navbar #main-footer .footer-text p a {
+  color: #8b8b8b;
+  text-decoration: underline;
+}
+
+#container #navbar #main-footer .footer-text p a:hover {
+  color: #323232;
+}
+
+#carousel, #portfolio {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid #323232;
+  position: relative;
+}
+
+#carousel .mySlides, #portfolio .mySlides {
+  display: none;
+  width: 80vw;
+  height: 100vh;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #323232;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #8b8b8b;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#about, #packages, #contact {
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid #323232;
+}
+
+#about .about-header, #about .packages-header, #about .contact-header, #packages .about-header, #packages .packages-header, #packages .contact-header, #contact .about-header, #contact .packages-header, #contact .contact-header {
+  padding: 1rem 0 2rem 0;
+  background-color: #323232;
+  text-align: center;
+}
+
+#about .about-header .about-title, #about .about-header .packages-title, #about .about-header .contact-title, #about .packages-header .about-title, #about .packages-header .packages-title, #about .packages-header .contact-title, #about .contact-header .about-title, #about .contact-header .packages-title, #about .contact-header .contact-title, #packages .about-header .about-title, #packages .about-header .packages-title, #packages .about-header .contact-title, #packages .packages-header .about-title, #packages .packages-header .packages-title, #packages .packages-header .contact-title, #packages .contact-header .about-title, #packages .contact-header .packages-title, #packages .contact-header .contact-title, #contact .about-header .about-title, #contact .about-header .packages-title, #contact .about-header .contact-title, #contact .packages-header .about-title, #contact .packages-header .packages-title, #contact .packages-header .contact-title, #contact .contact-header .about-title, #contact .contact-header .packages-title, #contact .contact-header .contact-title {
+  color: #f0f0f0;
+  background-color: #323232;
+  font-size: 2.5rem;
+}
+
+#about .about-header .bottom-line, #about .packages-header .bottom-line, #about .contact-header .bottom-line, #packages .about-header .bottom-line, #packages .packages-header .bottom-line, #packages .contact-header .bottom-line, #contact .about-header .bottom-line, #contact .packages-header .bottom-line, #contact .contact-header .bottom-line {
+  background-color: #f0f0f0;
+  height: 0.2em;
+  width: 15em;
+  margin: 0.5em auto 0 auto;
+}
+
+#about .weddings-section, #about .equipment-section, #about .package, #packages .weddings-section, #packages .equipment-section, #packages .package, #contact .weddings-section, #contact .equipment-section, #contact .package {
+  padding: 2em;
+}
+
+#about .weddings-section .weddings-title, #about .weddings-section .equipment-title, #about .weddings-section .package-title, #about .equipment-section .weddings-title, #about .equipment-section .equipment-title, #about .equipment-section .package-title, #about .package .weddings-title, #about .package .equipment-title, #about .package .package-title, #packages .weddings-section .weddings-title, #packages .weddings-section .equipment-title, #packages .weddings-section .package-title, #packages .equipment-section .weddings-title, #packages .equipment-section .equipment-title, #packages .equipment-section .package-title, #packages .package .weddings-title, #packages .package .equipment-title, #packages .package .package-title, #contact .weddings-section .weddings-title, #contact .weddings-section .equipment-title, #contact .weddings-section .package-title, #contact .equipment-section .weddings-title, #contact .equipment-section .equipment-title, #contact .equipment-section .package-title, #contact .package .weddings-title, #contact .package .equipment-title, #contact .package .package-title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2em;
+}
+
+#about .weddings-section .weddings-content, #about .weddings-section .equipment-content, #about .weddings-section p, #about .equipment-section .weddings-content, #about .equipment-section .equipment-content, #about .equipment-section p, #about .package .weddings-content, #about .package .equipment-content, #about .package p, #packages .weddings-section .weddings-content, #packages .weddings-section .equipment-content, #packages .weddings-section p, #packages .equipment-section .weddings-content, #packages .equipment-section .equipment-content, #packages .equipment-section p, #packages .package .weddings-content, #packages .package .equipment-content, #packages .package p, #contact .weddings-section .weddings-content, #contact .weddings-section .equipment-content, #contact .weddings-section p, #contact .equipment-section .weddings-content, #contact .equipment-section .equipment-content, #contact .equipment-section p, #contact .package .weddings-content, #contact .package .equipment-content, #contact .package p {
+  line-height: 2em;
+  font-size: 1.2em;
+  margin: 0 auto 0 auto;
+  width: 58vw;
+}
+
+#about .equipment-images, #packages .equipment-images, #contact .equipment-images {
+  padding: 2em;
+  margin-bottom: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (31.4%)[2];
+      grid-template-columns: repeat(2, 31.4%);
+  -ms-grid-rows: (52%)[3];
+      grid-template-rows: repeat(3, 52%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .equipment-images img, #packages .equipment-images img, #contact .equipment-images img {
+  border: solid #323232;
+}
+
+#portfolio {
+  overflow-y: auto;
+}
+
+#portfolio .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  margin: 0;
+}
+
+#portfolio .container div {
+  background-color: #8b8b8b;
+  height: 20em;
+  background-size: cover;
+  -webkit-transform: all 1s ease-in;
+          transform: all 1s ease-in;
+}
+
+.a {
+  background: url(https://www.wallpapers4u.org/wp-content/uploads/wedding_bouquet_groom_bride_1380_1920x1080.jpg);
+}
+
+.b {
+  background: url(https://i.pinimg.com/originals/b0/bc/d8/b0bcd8bfda3014e71bf731ef828a74ca.jpg);
+}
+
+.c {
+  background: url(https://i.pinimg.com/originals/c7/4c/34/c74c34a04adbe1a32bcc97c3ef826958.jpg);
+}
+
+.d {
+  background: url(https://c1.wallpaperflare.com/preview/32/593/199/couple-wedding-reflection-marriage.jpg);
+}
+
+.e {
+  background: url(https://wallpapermemory.com/uploads/320/bride-in-wedding-dress-wallpaper-1080p-465898.jpg);
+}
+
+.f {
+  background: url(https://www.wallpaperbetter.com/wallpaper/976/588/856/couple-wedding-1080P-wallpaper-middle-size.jpg);
+}
+
+.g {
+  background: url(https://www.byrnesagency.com/wp-content/uploads/2011/11/white-wedding.jpg);
+}
+
+.h {
+  background: url(https://media-api.xogrp.com/images/68a3d43a-42bb-11e5-8d16-12313d2529c5~rs_729.h);
+}
+
+.i {
+  background: url(https://4.bp.blogspot.com/-oU2dMAxJq0E/WG5cCWiXoeI/AAAAAAAAAKI/rXt-TjtLJtUPpi4WYddlkmjCKUNEDIGyQCLcB/s1600/wallpaper%2Bwedding%2Bon%2Bthe%2Bsunset.jpeg);
+}
+
+.j {
+  background: url(https://i.pinimg.com/originals/2a/26/af/2a26afadb5c623d5af41d5fc35fb998b.jpg);
+}
+
+.k {
+  background: url(https://www.weddinginspirasi.com/wp-content/uploads/2015/01/romantic-destination-wedding-secrets-resorts-spas-huatulco-mexico-couple-resort-pool-bride-groom-sunset-picture.jpg);
+}
+
+.l {
+  background: url(https://s3-ap-southeast-2.amazonaws.com/pdbmedia/2012/04/bride-and-groom-wedding-sunset.jpg);
+}
+
+.m {
+  background: url(/man-and-woman-standing-beside-carriage-3204420.jpg);
+}
+
+.n {
+  background: url(/man-in-gray-dress-suit-jacket-embraces-woman-wearing-wedding-931796.jpg);
+}
+
+.o {
+  background: url(/a-photo-of-a-bride-and-groom-3684809.jpg);
+}
+
+.container div:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.packages-img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+}
+
+.packages-img img {
+  border: solid #323232;
+  width: 30%;
+  height: 20%;
+}
+
+.contact-content {
+  padding: 5rem;
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-content .name-input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  margin: 1rem 0;
+}
+
+.contact-content .subject-input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subject;
+  margin: 1rem 0;
+}
+
+.contact-content .email-input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+  margin: 1rem 0;
+}
+
+.contact-content .phone-input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+  margin: 1rem 0;
+}
+
+.contact-content .message-input {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  margin: 1rem 0;
+  height: 5rem;
+}
+
+.contact-content .text-input {
+  padding: 0.5rem 1rem;
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.button button[type='submit'] {
+  width: 10%;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #323232;
+  color: #f0f0f0;
+}
+
+#contact-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 8rem;
+  padding: 3.2rem;
+  height: 15rem;
+  background: #323232;
+}
+
+#contact-info div, #contact-info .fas, #contact-info a, #contact-info h3, #contact-info p {
+  color: #f0f0f0;
+  background: #323232;
+  text-decoration: none;
+}
+
+#contact {
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */

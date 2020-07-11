@@ -1,0 +1,213 @@
+@import "config";
+@import "utilities";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6; 
+    background-color: rgb(255, 255, 255);
+}
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+ul {
+    list-style: none;
+}
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+img {
+    width: 100%;
+}
+#main-nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: $dark-color;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+h3 {
+    display: flex;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    span {color: $main-color; padding-left: 0.3rem;}
+}
+ul {
+    display: flex;
+    li {
+        padding: 1rem 1.5rem;}
+    a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-bottom:3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        &:hover {
+            border-color: $medium-color;}
+        &.current {
+            border-color: $main-color;}
+    }
+}
+#header {
+    &-home {
+        background: $bg-image no-repeat center right / cover;
+        height: 100vh;
+        color: #fff;
+        .header-content {
+            text-align: center;
+            padding-top: 20%;
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+                span {
+                    color: $main-color;
+                    font-style: italic;
+                }
+            }
+            .lead {
+                font-size: 1.6rem;
+                padding-top: 1rem;
+                color: $main-color;
+            }
+            .email {
+                font-size: 1.3rem;
+                color: $main-color;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+    &-inner {
+        align-items: center;}
+}
+#btn-light a:visited { 
+    color: $light-color;
+    background-color: $main-color;
+}
+#btn-light a { 
+    color: $light-color;
+    background-color: $main-color;
+}
+#home {
+    &-a {
+        height: 120vh;
+        h2 {
+            padding-top: 8rem;}
+        .specials {
+            margin: 4rem 0;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            
+            img {
+                height: 150px;
+                width: 300px;
+                border: solid #ffbc00 2px;
+            }
+            div h3 {
+                display: block;
+                padding: 0.5em;
+            }
+            .fab, .play-btn {
+                color: $dark-color;
+                border-color: $dark-color;
+                margin: 1em;
+            }
+            .fas {
+                color: $main-color;
+                padding-bottom: 0.4rem;}
+
+                .play-btn {
+                    border-radius: 0;
+
+                    i {
+                        margin: 0 3px;
+                        color: $dark-color;}
+                }
+            div {
+                padding: 2rem;    
+                    &:nth-child(1) {
+                    background: $light-color;}
+                    &:nth-child(4) {
+                    background: $light-color;}
+                    &:nth-child(2) {
+                    background: $medium-color;}
+                    &:nth-child(3) {
+                    background: $medium-color;}
+            }
+        }
+    }
+}
+#about {
+    height: 100vh;
+    background-color: $dark-color;
+    max-width: 100%;
+    color: white;
+    h2 {
+        bottom: 10%;
+        padding-top: 20rem;}
+        p {
+            margin-top: 6rem ;
+        }
+    }
+#skills {
+    height: 92vh;
+    h2 {
+        padding-top: 12rem;
+    }
+    #skills-info {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;        
+    }
+    .box-1, .box-2, .box-3 {
+        border: $dark-color solid;
+        background-color: $light-color;
+        margin-top: 4.5rem;
+        padding: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        h3 {
+            display: block;
+            text-decoration: underline;
+            margin: 0 0 3rem ;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5rem;
+            span {
+                color: $main-color;
+            }    
+        }
+    }
+}
+#main-footer {
+    background: $dark-color;
+    color: #fff;
+    height: 5rem;
+    padding: 0 19rem;
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+    }
+}
+.fab, .far, .play-btn {
+    margin: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+    &:hover {background: $main-color;}
+}
