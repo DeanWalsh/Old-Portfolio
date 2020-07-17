@@ -29,7 +29,7 @@ img {
     justify-content: space-around;
     padding: 1rem 0;
     background-color: $dark-color;
-    opacity: 0.8;
+    opacity: 0.95;
     filter: alpha(opacity=70);
 }
 h3 {
@@ -50,17 +50,18 @@ ul {
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
         &:hover {
-            border-color: $medium-color;}
+            border-color: $main-color;}
         &.current {
             border-color: $main-color;}
     }
 }
 #header {
     &-home {
-        background: $bg-image no-repeat center right / cover;
+        background: $bg-image no-repeat center / cover;
         height: 100vh;
         color: #fff;
         .header-content {
+            width: 100%;
             text-align: center;
             padding-top: 20%;
             h1 {
@@ -94,12 +95,12 @@ ul {
     color: $light-color;
     background-color: $main-color;
 }
-#home {
+#projects {
     &-a {
         height: 120vh;
         h2 {
             padding-top: 8rem;}
-        .specials {
+        .projects-b {
             margin: 4rem 0;
             display: grid;
             grid-gap: 2rem;
@@ -211,3 +212,9 @@ ul {
     padding: 0.5rem;
     &:hover {background: $main-color;}
 }
+
+
+
+
+
+@import 'media';

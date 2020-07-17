@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#header-content, #home-a, #about-info, #skills {
+#header-content, #projects-a, #about-info, #skills {
   max-width: 1280px;
   padding: 0 1.5rem;
   margin: auto;
@@ -144,7 +144,7 @@ img {
       justify-content: space-around;
   padding: 1rem 0;
   background-color: #1b1b1b;
-  opacity: 0.8;
+  opacity: 0.95;
   filter: alpha(opacity=70);
 }
 
@@ -182,7 +182,7 @@ ul a {
 }
 
 ul a:hover {
-  border-color: #ccc;
+  border-color: #ffbc00;
 }
 
 ul a.current {
@@ -190,12 +190,13 @@ ul a.current {
 }
 
 #header-home {
-  background: url(https://p4.wallpaperbetter.com/wallpaper/264/871/595/blurred-computer-programming-html-wallpaper-preview.jpg) no-repeat center right/cover;
+  background: url(/dist/img/imageedit_1_2910607801.jpg) no-repeat center/cover;
   height: 100vh;
   color: #fff;
 }
 
 #header-home .header-content {
+  width: 100%;
   text-align: center;
   padding-top: 20%;
 }
@@ -238,15 +239,15 @@ ul a.current {
   background-color: #ffbc00;
 }
 
-#home-a {
+#projects-a {
   height: 120vh;
 }
 
-#home-a h2 {
+#projects-a h2 {
   padding-top: 8rem;
 }
 
-#home-a .specials {
+#projects-a .projects-b {
   margin: 4rem 0;
   display: -ms-grid;
   display: grid;
@@ -255,54 +256,54 @@ ul a.current {
       grid-template-columns: repeat(2, 1fr);
 }
 
-#home-a .specials img {
+#projects-a .projects-b img {
   height: 150px;
   width: 300px;
   border: solid #ffbc00 2px;
 }
 
-#home-a .specials div h3 {
+#projects-a .projects-b div h3 {
   display: block;
   padding: 0.5em;
 }
 
-#home-a .specials .fab, #home-a .specials .play-btn {
+#projects-a .projects-b .fab, #projects-a .projects-b .play-btn {
   color: #1b1b1b;
   border-color: #1b1b1b;
   margin: 1em;
 }
 
-#home-a .specials .fas {
+#projects-a .projects-b .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem;
 }
 
-#home-a .specials .play-btn {
+#projects-a .projects-b .play-btn {
   border-radius: 0;
 }
 
-#home-a .specials .play-btn i {
+#projects-a .projects-b .play-btn i {
   margin: 0 3px;
   color: #1b1b1b;
 }
 
-#home-a .specials div {
+#projects-a .projects-b div {
   padding: 2rem;
 }
 
-#home-a .specials div:nth-child(1) {
+#projects-a .projects-b div:nth-child(1) {
   background: #f4f4f4;
 }
 
-#home-a .specials div:nth-child(4) {
+#projects-a .projects-b div:nth-child(4) {
   background: #f4f4f4;
 }
 
-#home-a .specials div:nth-child(2) {
+#projects-a .projects-b div:nth-child(2) {
   background: #ccc;
 }
 
-#home-a .specials div:nth-child(3) {
+#projects-a .projects-b div:nth-child(3) {
   background: #ccc;
 }
 
@@ -397,5 +398,14 @@ ul a.current {
 
 .fab:hover, .far:hover, .play-btn:hover {
   background: #ffbc00;
+}
+
+@media (max-width: 800px) {
+  #header-home .header-content {
+    padding-top: 10rem;
+  }
+  #header-home .header-content h1 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
