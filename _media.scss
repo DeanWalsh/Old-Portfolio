@@ -49,21 +49,17 @@
     }
 
 
-.header-content {
-    display: block;
-    justify-content: center !important;
-    min-height: 80vh;
-    text-align: center;
-    padding-top: 10rem !important;
-    h1 {
+.home-content {
+    padding-top: 5rem !important;
+    h1 span {
         display: none;
     }
 }
 
 
 
-#projects-a {
-    .projects-b {
+#projects-header {
+    .projects-content {
         margin: 4rem 0;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, max-content));

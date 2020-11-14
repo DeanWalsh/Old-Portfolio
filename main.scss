@@ -2,49 +2,53 @@
 @import "utilities";
 
 
-#nav-main {
-    display: flex;
+#header{
     position: fixed;
     width: 100%;
     min-height: 6vh;
-    justify-content: space-around;
     padding: 1rem 0;
     background-color: $dark-color;
     opacity: 0.95;
     filter: alpha(opacity=70);
-}
-.nav-links {
-    display: flex;
-    li {
-        padding: 1rem 1.5rem;}
-    a {
-        text-decoration: none;
-        letter-spacing: 3px;
-        color: white;
-        text-transform: uppercase;
-        border-bottom:3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 0.5s;
-        &:hover {
-            border-color: $main-color;}
-        &.current {
-            border-color: $dark-color;}
+    #nav-main {
+            display: flex;
+            justify-content: space-around;
+                .nav-name {
+                    color: #fff;
+                }
+                .nav-links {
+                    display: flex;
+                    li {
+                        padding: 1rem 1.5rem;}
+                    a {
+                        text-decoration: none;
+                        letter-spacing: 3px;
+                        color: white;
+                        text-transform: uppercase;
+                        border-bottom:3px transparent solid;
+                        padding-bottom: 0.5rem;
+                        transition: border-color 0.5s;
+                        &:hover {
+                            border-color: $main-color;}
+                        &.current {
+                            border-color: $dark-color;}
+                    }
+                }
+        }
     }
-}
-#header {
-    &-home {
-        background: $bg-image no-repeat center / cover;
-        min-height: 100vh;
-        color: #fff;
-        .header-content {
-            position: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding-top: 20%;
+#home {
+    background: $bg-image no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .home-content {
+            margin:0;
+            padding-top: 9.2vh;
             h1 {
                 font-size: 4rem;
                 line-height: 1.2;
+                color: white;
                 span {
                     color: $main-color;
                     font-style: italic;
@@ -56,35 +60,26 @@
                 color: $main-color;
             }
         }
-    }
 }
-#btn-light a:visited { 
-    color: $light-color;
-    background-color: $main-color;
-}
-#btn-light a { 
-    color: $light-color;
-    background-color: $main-color;
-}
+
 #projects {
-    &-a {
+    &-header {
         min-height: 100vh;
         h2 {
             padding-top: 8rem;}
-        .projects-b {
+        .projects-content {
             margin: 4rem 0;
             display: grid;
-            grid-gap: 1.5rem;
+            grid-gap: 1rem;
             grid-template-columns: repeat(2, minmax(350px, max-content));
             
             img {
-                height: 125px;
-                width: 250px;
-                border: solid #ffbc00 2px;
+                height: 80px;
+                width: 150px;
+                border: solid #ffbc00 1.5px;
             }
             div h3 {
                 display: block;
-                padding: 0.5em;
             }
             .fab, .play-btn {
                 color: $dark-color;
@@ -102,15 +97,19 @@
                         margin: 0 3px;
                         color: $dark-color;}
                 }
-            div {
-                padding: 2rem;    
-                    &:nth-child(1) {
+            .projects {
+
+                    &-1 {
+                    padding: 2rem 2rem 16px;
                     background: $light-color;}
-                    &:nth-child(4) {
+                    &-4 {
+                    padding: 2rem 2rem 16px;
                     background: $light-color;}
-                    &:nth-child(2) {
+                    &-2 {
+                    padding: 2rem 2rem 16px;
                     background: $medium-color;}
-                    &:nth-child(3) {
+                    &-3 {
+                    padding: 2rem 2rem 16px;
                     background: $medium-color;}
             }
         }
@@ -136,25 +135,24 @@
         display: grid;
         grid-gap: 1rem;
         margin: 4rem 0;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(auto, 20rem));
         justify-content: space-around;        
     }
     .box-1, .box-2, .box-3 {
         border: $dark-color solid;
         background-color: $light-color;
-        margin-top: 4.5rem;
         padding: 2rem;
-        line-height: 2.6rem;
+        line-height: 3.6rem;
         text-align: center;
         h3 {
             display: block;
             text-decoration: underline;
             margin: 0 0 3rem ;
-            text-align: center;
         }
         p{
             font-size: 1.5rem;
             span {
+                font-size: 1.2rem;
                 color: $main-color;
             }    
         }
