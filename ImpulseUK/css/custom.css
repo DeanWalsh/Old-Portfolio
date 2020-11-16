@@ -35,7 +35,7 @@ table {
 
 .p-m {
     justify-items: center;
-    margin: 0 12.5%;
+    margin: 0 10%;
     padding: 4rem 0 0;
 }
 
@@ -68,15 +68,19 @@ a, .subscribe input.submit, .button, #horizontal-tabs.style2 ul.tabs li, #vertic
 
 header {
     display: grid;
-    grid-template-columns: 15% 70% 15% ;
+    grid-template-columns: 15% 65% 20% ;
     grid-template-rows: 50% 50%;
-    margin: 0 15% 2rem 15%;
-    padding: 2rem 1rem 0;
+    padding: 2rem 15% 2rem 15%;
     align-items: center;
+    border-bottom: solid 2px #15b5fa;
+
 }
 #logo {
     grid-column: 1;
     grid-row: span 2;
+}
+#logo a img {
+    width: 60%;
 }
 #menu {
     grid-column: 2;
@@ -205,9 +209,9 @@ header {
     min-height: 100vh;
 }
 
-#services-title, #about-title {
+#services-title, #about-title, #contact-title {
     text-align: center;
-    width: 200px;
+    width: 205px;
     padding: 1rem;
     margin: 0 auto 0;
     color: ghostwhite;
@@ -231,7 +235,7 @@ header {
     min-height: 100px;
     max-height: 150px;
     height: 100%;
-    min-width: 335px;
+    min-width: 330px;
 }
 
 .services-y {
@@ -240,7 +244,7 @@ header {
     min-height: 100px;
     max-height: 150px;
     height: 100%;
-    min-width: 335px;
+    min-width: 330px;
 }
 #service-first {
     grid-column: 1;
@@ -292,7 +296,7 @@ header {
 
 #about-wrapper {
     min-height: 100vh;
-    background: linear-gradient(0.25turn, rgba(6, 57, 99, 0.781), #29b9f780);
+    background: linear-gradient(0.25turn, rgb(4, 44, 77), #0878a894);
 }
 #about {
     padding-top: 0;
@@ -320,6 +324,7 @@ header {
 }
 #about-card p {
     align-self: center;
+    text-align: center;
     margin: 1rem;
     font-size: 1.1em;
     line-height: 1.2em;
@@ -344,9 +349,9 @@ header {
     min-height: 650px;
 }
 
-#featured-clients-title {
+#featured-clients-title  {
     text-align: center;
-    width: 300px;
+    width: 260px;
     padding: 1rem;
     margin: 0 auto 0;
     color: ghostwhite;
@@ -385,8 +390,27 @@ header {
 }
 
 
+/* Custom CSS Contact*/
 
-
+.contact-form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 17% 23% 50% 10%;
+}
+#contact-info {
+    display: grid;
+}
+#contact-info-title {
+    text-align: center;
+    width: 205px;
+    padding: 1rem;
+    margin: 0 auto 0;
+    color: ghostwhite;
+    border-bottom: solid 5px #c24087;
+    border-radius: 0 0 3px 3px;
+    background-color: #15b5fa;
+}
 
 /* Custom CSS Footer*/
 

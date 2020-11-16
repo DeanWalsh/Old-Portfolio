@@ -16,7 +16,7 @@
 
 
 /* === common styles === */
-.float-right, .top-bar .social-icons, #nav, .more, footer .social, header .social, .accordion .icon-plus, .accordion .icon-minus, .portfolio-control, .portfolio-control a, a.next-post {
+.float-right, .top-bar .social-icons, .more, footer .social, header .social, .accordion .icon-plus, .accordion .icon-minus, .portfolio-control, .portfolio-control a, a.next-post {
 	float:right;
 }
 
@@ -143,9 +143,7 @@ header.fixed .sticky-wrapper.is-sticky .main-header, header.fixed .sticky-wrappe
 }
 
 /* navigation menu */
-#nav {
-	margin-top:-4px;
-}
+
 
 header.style-3 #nav {
 	margin-top:-1px;
@@ -400,43 +398,6 @@ i.icon-angle-down.responsive {
 }
 
 /* footer */
-footer {
-	margin-top:40px;
-}
-
-.footer-top {
-	padding:40px 0;
-}
-
-.footer-down {
-	padding:22px 0;
-}
-
-footer h3.title {
-	margin-bottom:20px;
-}
-
-.subscribe form {
-	margin-top:22px;
-}
-
-.subscribe input.mail {
-	padding:13px;
-	border:none;
-	width: 53%;
-    margin-right: 2px;
-}
-
-.subscribe input.submit {
-	padding:12px 15px;
-	border:none;
-	cursor:pointer;
-}
-
-span.copyright {
-	padding-top: 7px;
-	display: block;
-}
 
 
 /* start inernal pages */
@@ -1078,9 +1039,7 @@ div.clientLogo img {
 	width: 60%; height: 60%;
 }
 
-h1, h2, h3, h4, h5 {
-	font-family: 'Raleway', Helvetica, Arial, Verdana, sans-serif!important;
-}
+
 
 
 /* Media Queries
