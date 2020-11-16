@@ -58,7 +58,7 @@
      
       <form id="ajax-contact-form" action="">
      
-     <div class="form-box">
+     <div id="name" class="form-box">
        <label>Name <small>*</small></label>
        <input type="text" name="name" class="text">
      </div>
@@ -83,15 +83,19 @@
      
     </div>
      
-    <div id="contact-info" class="five columns top-3 bottom-2 p-m">
+    <div id="contact-info" class="p-m">
       <h3 id="contact-info-title">Contact Info</h3>
       
-      <ul class="address-info">
+      <ul id="first" class="address-info">
 
-      <li><strong>Mailing Address</strong><br />Ash House,<br />
+      <li id="first"><strong>Mailing Address</strong><br />Ash House,<br />
           Church Street,<br />Wymeswold,<br />
           Leicestershire,<br />LE12 6TX<br />UK</li>
-        <li><strong>Trading Address</strong><br />IGS, Unit 2, Marina Court,<br />
+      </ul>
+
+      <ul id="second" class="address-info">
+
+        <li id="second"><strong>Trading Address</strong><br />IGS, Unit 2, Marina Court,<br />
           Tungsten Park,<br />
           Coventry Road,<br />Hinckley,<br />LE10 3BF<br />UK</li>
       </ul>

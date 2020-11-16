@@ -398,10 +398,20 @@ header {
     grid-template-columns: 30% 30%;
     grid-template-rows: 17% 23% 50% 10%;
 }
+#contact-title {
+    grid-column: span 2;
+}
+#name {
+    grid-column: 1;
+}
 #contact-info {
     display: grid;
+    min-height: 50vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 70% 10%;
 }
 #contact-info-title {
+    grid-column: span 2;
     text-align: center;
     width: 205px;
     padding: 1rem;
@@ -410,6 +420,16 @@ header {
     border-bottom: solid 5px #c24087;
     border-radius: 0 0 3px 3px;
     background-color: #15b5fa;
+}
+#first {
+    
+    grid-column: 1;
+}
+#second {
+    grid-column: 2;
+}
+#contact-info .phone-info {
+    grid-column: 1;
 }
 
 /* Custom CSS Footer*/
