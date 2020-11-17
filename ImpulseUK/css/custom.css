@@ -124,7 +124,6 @@ header {
 
 .slider-1 .slides li .contain, .slider-1 .loading, .slider-2 .slides li .contain, .slider-2 .loading {
 	position:relative;
-	min-height:435px;
 }
 
 .slider-1 .slides li h2, .slider-1 .slides li p, .slider-1 .slides li .links {
