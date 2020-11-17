@@ -467,6 +467,13 @@ footer {
     text-align: center;
     padding-bottom: 1.5rem;
 }
+footer a {
+    color: ghostwhite;
+}
+ a:hover {
+    color: #15b5fa;
+}
+
 
 
 
