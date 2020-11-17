@@ -54,7 +54,7 @@ em { font-style: italic; }
 strong { font-weight: bold; }
 small { font-size: 80%; }
 
-/* Links*/
+/* Links */
 a, .subscribe input.submit, .button, #horizontal-tabs.style2 ul.tabs li, #vertical-tabs.style2 ul.tabs li, .team .item img, body.under-construction .content input.subscribe-button { 
 	-webkit-transition: all 0.3s ease-in;  
     -moz-transition: all 0.3s ease-in;  
@@ -64,7 +64,7 @@ a, .subscribe input.submit, .button, #horizontal-tabs.style2 ul.tabs li, #vertic
 }
 
 
-/* Custom CSS Header*/ 
+/* Header*/ 
 
 header {
     display: grid;
@@ -115,7 +115,7 @@ header {
 }
 
 
-/* Custom CSS Banner*/ 
+/* Banner*/ 
 
 /* slider */
 .slider-1, .slider-2 {
@@ -198,7 +198,7 @@ header {
 }
 
 
-/* Custom CSS Services */
+/* Services */
 
 #services-wrapper {
     background: url(https://aags.us/wp-content/uploads/2019/10/our-services-bcg.jpg);
@@ -291,7 +291,7 @@ header {
 }
 
 
-/* Custom CSS About */
+/* About */
 
 #about-wrapper {
     min-height: 100vh;
@@ -342,7 +342,7 @@ header {
 }
 
 
-/* Custom CSS Clients*/
+/* Clients*/
 
 #featured-clients-wrapper {
     min-height: 650px;
@@ -389,7 +389,7 @@ header {
 }
 
 
-/* Custom CSS Contact*/
+/* Contact*/
 
 .contact-form {
     display: grid;
@@ -437,7 +437,7 @@ header {
     grid-row: 3;
 }
 
-/* Custom CSS Footer*/
+/* Footer*/
 
 footer {
     background-color: #292929;
@@ -477,6 +477,8 @@ footer a {
 
 
 
+/* Media Queries Desktop */
+
 
 @media (max-height: 850px) {#services {
     margin-top: 0;
@@ -501,3 +503,8 @@ footer a {
     padding-bottom: 4rem
 }
 }
+
+
+
+
+/* Media Queries Mobile */
