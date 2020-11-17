@@ -223,7 +223,7 @@ header {
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows:1% auto auto;
     text-align: center;
-    min-height: 600px;
+    min-height: 625px;
     grid-auto-flow: column;
 }
 .services-x {
