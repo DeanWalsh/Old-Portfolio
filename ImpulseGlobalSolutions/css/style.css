@@ -148,6 +148,7 @@ header {
     text-align: left;
     border-top: solid 2px ghostwhite;
     border-left: solid 2px ghostwhite;
+    border-right: none;
     border-bottom: solid 2px ghostwhite;
     border-radius: 5px 0 0 5px;
 }
