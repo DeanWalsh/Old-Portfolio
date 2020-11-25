@@ -132,7 +132,6 @@ header {
     align-items: center;
 }
 .banner-text {
-    text-align: right;
     color: ghostwhite;
     width: 85%;
     background-color: #000000c9;
@@ -143,15 +142,7 @@ header {
     border-bottom: solid 2px ghostwhite;
     border-radius: 0 5px 5px 0;
 }
-#banner-2 .banner-text {
-    justify-self: right;
-    text-align: left;
-    border-top: solid 2px ghostwhite;
-    border-left: solid 2px ghostwhite;
-    border-right: none;
-    border-bottom: solid 2px ghostwhite;
-    border-radius: 5px 0 0 5px;
-}
+
 #banner-2 .banner-text {
     margin: 11rem 0 0 0;
     width: 65%;
