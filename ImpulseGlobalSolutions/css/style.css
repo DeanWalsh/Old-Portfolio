@@ -132,6 +132,7 @@ header {
     align-items: center;
 }
 .banner-text {
+    text-align: right;
     color: ghostwhite;
     width: 85%;
     background-color: #000000c9;
@@ -144,6 +145,7 @@ header {
 }
 #banner-2 .banner-text {
     justify-self: right;
+    text-align: left;
     border-top: solid 2px ghostwhite;
     border-left: solid 2px ghostwhite;
     border-bottom: solid 2px ghostwhite;
