@@ -313,6 +313,9 @@ input[class^='btn-']:hover {
 
 #about p {
   margin-top: 6rem;
+  letter-spacing: .8px;
+  word-spacing: 1.7px;
+  font-size: 1.2em;
 }
 
 #skills {
@@ -360,20 +363,25 @@ input[class^='btn-']:hover {
 #main-footer {
   background: #1b1b1b;
   color: #fff;
-  height: 5rem;
-  padding: 0 19rem;
+  height: 6rem;
+  padding: .7rem 19rem;
 }
 
 #main-footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#main-footer p {
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {

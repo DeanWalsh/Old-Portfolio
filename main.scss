@@ -123,7 +123,10 @@
         bottom: 10%;
         padding-top: 20rem;}
         p {
-            margin-top: 6rem ;
+            margin-top: 6rem;
+            letter-spacing: .8px;
+            word-spacing: 1.7px;
+            font-size: 1.2em;
         }
     }
 #skills {
@@ -161,13 +164,16 @@
 #main-footer {
     background: $dark-color;
     color: #fff;
-    height: 5rem;
-    padding: 0 19rem;
+    height: 6rem;
+    padding: .7rem 19rem;
     .footer-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         height: 5rem;
         align-items: center;
+    }
+    p {
+        text-align: center;
     }
 }
 
