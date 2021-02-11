@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: ghostwhite;
+}
+h1 {
+    font-size: 6.5rem;
+    text-align: center;
+}
+.container {
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+}
+header {
+    height: 100vh;
+    padding: 3rem 0;
+    background: url(/img/wallpaperflare.com_wallpaper.jpg);
+}
+.header-top {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-bottom: 2rem;
+}
+.logo {
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    width: 9.2vw;
+}
+.logo a img {
+    width: 100%;
+    border-radius: 51%;
+}
+.nav {
+    align-self: center;
+    justify-self: center;
+}
+.nav ul li {
+    grid-column: 2;
+    padding: 0 0.6rem;
+    display: inline;
+}
+.nav ul li a {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: ghostwhite;
+}
+.nav ul li a:hover {
+    color: rgb(99, 180, 242);
+    transition: .5s;
+}
+.banner {
+    display: flex;
+    align-content: center;
+    min-height: 60vh;
+}
+.banner h1 {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: ghostwhite;
+}
+.about{
+    background: #f0f0f0;
+    padding: 4rem 0;
+    height: 100vh;
+}
+.about .container {
+    width: 60%;
+}
+.about h1 {
+    color: #606060;
+}
+.about-card {
+    background: ghostwhite;
+    border-radius: 0 7% 0 7%;
+    padding: 1.5rem;
+    margin: 4rem auto;
+}
+.about p {
+    color: rgb(36, 36, 36);
+    letter-spacing: .8px;
+    padding: .5rem 0;
+    line-height: 1.4em;
+}
+.about .about-img {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin: auto;
+    width: 250px;
+}
+.about img {
+    border: solid 5px ghostwhite;
+    border-radius: 51%;
+    width: 100%;
+}
