@@ -5,11 +5,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background: ghostwhite;
+    background: #f0f0f0;
 }
 h1 {
     font-size: 6.5rem;
     text-align: center;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.bold {
+    font-weight: bolder;
+}
+.italics {
+    font-style: italic;
 }
 .container {
     width: 85%;
@@ -20,6 +32,8 @@ header {
     height: 100vh;
     padding: 3rem 0;
     background: url(/BJS/img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .header-top {
     display: grid;
@@ -78,7 +92,7 @@ header {
     color: #606060;
 }
 .about-card {
-    background: ghostwhite;
+    background: #f0f0f0;
     border-radius: 0 7% 0 7%;
     padding: 1.5rem;
     margin: 4rem auto;
@@ -100,3 +114,86 @@ header {
     border-radius: 51%;
     width: 100%;
 }
+.showcase {
+    height: 100vh;
+    background: #606060;
+    padding: 4rem 0;
+}
+.showcase h1 {
+    color: ghostwhite;
+}
+.services {
+    height: 100vh;
+    background:#f0f0f0;
+    padding: 4rem 0;
+}
+.services h1 {
+    color: #606060;
+}
+.services-cards {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 8%;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    width: 60vw;
+    margin: auto;
+}
+.card {
+    background: #90bec8;
+    color: ghostwhite;
+    padding: 2rem;
+    border-radius: 0 12.5% 0 12.5%;
+}
+.testimonials {
+    height: 100vh;
+    padding: 4rem 0;
+    background: #606060;
+}
+.testimonials h1 {
+    color: ghostwhite;
+}
+.testimonial-cards {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.testimonial-card {
+    width: 20%;
+    margin: 0 4rem;
+    color: ghostwhite;
+    text-align: center;
+}
+.top-footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    margin: auto;
+    width: 60%;
+    height: 34vh;
+}
+.footer-links, .footer-about, .footer-socials {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: solid 6px rgb(100, 100, 100);
+}
+.top-footer h6 {
+    padding: 1rem 0;
+}
+.bottom-footer {
+    background: #fff;
+    height: 6vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #606060;
+    font-size: .8rem;
+}
+
+
+
