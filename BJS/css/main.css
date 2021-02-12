@@ -83,13 +83,20 @@ header {
     color: ghostwhite;
 }
 .ready-to-go-banner {
-    display: grid;
-    align-content: center;
     min-height: 60vh;
     text-align: center;
     width: 50%;
     margin: auto;
     color: ghostwhite;
+}
+.ready-to-go-banner h1 {
+    padding: 2rem 0;
+}
+.ready-to-go-banner p {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+    width: 75%;
+    margin: auto;
 }
 .about{
     background: #f0f0f0;
