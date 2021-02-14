@@ -31,7 +31,7 @@ ul {
     margin: auto;
 }
 header {
-    height: 100vh;
+    min-height: 100vh;
     padding: 3rem 0;
     background: url(/BJS/img/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
@@ -97,6 +97,9 @@ header {
     padding: 2rem 0;
     width: 75%;
     margin: auto;
+}
+.contact h4 {
+    color: #f0f0f0;
 }
 .about{
     background: #f0f0f0;
@@ -239,6 +242,15 @@ footer {
     color: #606060;
     font-size: .8rem;
 }
+.tracks {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
 
 
 
