@@ -101,15 +101,15 @@ header {
 .contact h4 {
     color: #f0f0f0;
 }
-.about{
+#about{
     background: #f0f0f0;
     padding: 4rem 0;
     height: 100vh;
 }
-.about .container {
+#about .container {
     width: 60%;
 }
-.about h1 {
+#about h1 {
     color: #606060;
 }
 .about-card {
@@ -118,39 +118,39 @@ header {
     padding: 1.5rem;
     margin: 4rem auto;
 }
-.about p {
+#about p {
     color: rgb(36, 36, 36);
     letter-spacing: .8px;
     padding: .5rem 0;
     line-height: 1.4em;
 }
-.about .about-img {
+#about .about-img {
     text-align: center;
     padding-top: 1.5rem;
     margin: auto;
     width: 250px;
 }
-.about img {
+#about img {
     border: solid 5px ghostwhite;
     border-radius: 51%;
     width: 100%;
 }
-.showcase {
+#showcase {
     height: 100vh;
     background: #606060;
     padding: 4rem 0;
 }
-.showcase h1 {
+#showcase h1 {
     color: ghostwhite;
 }
-.services {
+#services {
     height: 100vh;
     padding: 4rem 0;
     background: url(/BJS/img/wallpaperflare.com_wallpaper.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-.services h1 {
+#services h1 {
     color: #f0f0f0;
 }
 .services-cards {
@@ -180,12 +180,12 @@ header {
     color: rgb(70, 70, 70);
     text-align: center;
 }
-.testimonials {
+#testimonials {
     height: 100vh;
     padding: 4rem 0;
     background: #606060;
 }
-.testimonials h1 {
+#testimonials h1 {
     color: ghostwhite;
 }
 .testimonial-cards {
