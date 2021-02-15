@@ -33,7 +33,7 @@ ul {
 header {
     min-height: 100vh;
     padding: 3rem 0;
-    background: url(/BJS/img/wallpaperflare.com_wallpaper.jpg);
+    background: url(/BJS/img/405040.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -65,7 +65,7 @@ header {
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 600;
-    color: ghostwhite;
+    color: rgb(34, 34, 34);
 }
 .nav ul li a:hover {
     color: rgb(99, 180, 242);
@@ -80,14 +80,14 @@ header {
     text-align: center;
     width: 50%;
     margin: auto;
-    color: ghostwhite;
+    color: rgb(34, 34, 34);
 }
 .ready-to-go-banner {
     min-height: 60vh;
     text-align: center;
     width: 50%;
     margin: auto;
-    color: ghostwhite;
+    color: rgb(34, 34, 34);
 }
 .ready-to-go-banner h1 {
     padding: 2rem 0;
@@ -102,7 +102,7 @@ header {
     color: rgb(100, 100, 100);
 }
 .contact h4 {
-    color: #f0f0f0;
+    color: rgb(34, 34, 34);
 }
 #about{
     background: #f0f0f0;
@@ -149,12 +149,12 @@ header {
 #services {
     height: 100vh;
     padding: 4rem 0;
-    background: url(/BJS/img/wallpaperflare.com_wallpaper.jpg);
+    background: url(/BJS/img/405040.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 #services h1 {
-    color: #f0f0f0;
+    color: rgb(34, 34, 34);
 }
 .services-cards {
     display: grid;
