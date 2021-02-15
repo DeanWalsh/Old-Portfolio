@@ -36,6 +36,7 @@ header {
     background: url(/BJS/img/405040.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 .header-top {
     display: grid;
@@ -152,6 +153,7 @@ header {
     background: url(/BJS/img/405040.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 #services h1 {
     color: rgb(34, 34, 34);
