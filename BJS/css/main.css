@@ -261,6 +261,18 @@ footer {
     padding-bottom: 5rem;
 }
 
+.contact-wrapper {
+    background-color: #888;
+}
+.inbound-form-wrapper {
+    display: grid;
+    align-content: center;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    background-color: #888;
+}
+
 
 
 
