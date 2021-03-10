@@ -9,23 +9,33 @@
     <title>Dean Walsh | Portfolio</title>
 </head>
 <body>
+
+
     <header id="header">
+
         <nav id="nav-main">
             <h3 class="nav-name">Dean <span>Walsh</span></h3>
+
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li class="active-top"><a href="#home">Home</a></li>
                 <li><a href="#projects-header">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li> 
             </ul>
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+
         </nav>
-</header>
+
+    </header>
+
+
 <div id="home">
+
     <div class="home-content text-center">
         <h1>Dean Walsh: 
             <span class="txt-type" data-wait="3000" data-words='["HTML", "CSS", "SASS", "JavaScript"]'></span>
@@ -37,57 +47,87 @@
         <a class="home-email" href="mailto: deanwalshdev@gmail.com"><i class="far fa-envelope"></i></a>
         <a class="home-github" href="https://github.com/DeanWalsh" target="_blank"><i class="fab fa-github"></i></a>
     </div>
+
 </div>
+
+
 <section id="projects-header">
-        <h2 class="section-title">My Projects</h2>
-        <div class="bottom-line"></div>
-            <div class="projects-content">
-                <div class="projects-1 text-center">
-                    <img src="/dist/img/Startpage.jpg" alt="Startpage.jpg">
-                    <h3>Browser Startpage</h3>
-                    <p>Pixel art minimalistic startpage I made for myself which incorporates HTML, CSS and Javascript. There are 12 background images that change in realtime, giving it a 'live wallpaper' sense that corresponds to the actual time of day/night</p>
-                    <a class="play-btn" href="/Startpage/startpage.html" target="_blank"><i class="fas fa-play"></i></a>
-                    <a href="https://github.com/DeanWalsh/startpage" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="projects-2 text-center">
-                    <img src="/dist/img/John Doe Photography.jpg" alt="JohnDoePhotography.jpg">
-                    <h3>John Doe Photography</h3>
-                    <p>Website created for an amateur wedding photographer which incorporates HTML, SASS/CSS and Javascript. Landing page uses a carousel and the portfolio page uses gridbox CSS and also zooms the photos on the page using CSS.</p>
-                    <a class="play-btn" href="/Wedding Page Project/home.html" target="_blank"><i class="fas fa-play"></i></a>
-                    <a href="https://github.com/DeanWalsh/WeddingPhotographyWebsite" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="projects-3 text-center">
-                    <img src="/dist/img/RR thumb.png" alt="Rigraff.jpg">
-                    <h3>RigRaff.com</h3>
-                    <p>Prestashop E-commerce website using PHP (Symphony Framework) and the MVC framework</p>
-                        <a class="play-btn" href="https://rigraff.com" target="_blank"><i class="fas fa-play"></i></a>
-                </div>
-                <div class="projects-4 text-center">
-                    <i class="fas fa-thumbs-up fa-8x"></i>
-                    <h3>Project 4</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi, sunt necessitatibus 
-                        ducimus reiciendis omnis voluptatem obcaecati excepturi voluptatibus recusandae.</p>
-                </div>
+
+    <h2 class="section-title">My Projects</h2>
+    <div class="bottom-line"></div>
+
+    <div class="projects-wrapper">
+
+        <div class="projects-content">
+            <div class="projects-1 text-center">
+                <img src="/dist/img/Startpage.jpg" alt="Startpage.jpg">
+                <h3>Browser Startpage</h3>
+                <p>Pixel art minimalistic startpage I made for myself which incorporates HTML, CSS and Javascript. There are 12 background images that change in realtime, giving it a 'live wallpaper' sense that corresponds to the actual time of day/night</p>
+                <a class="play-btn" href="/Startpage/startpage.html" target="_blank"><i class="fas fa-play"></i></a>
+                <a href="https://github.com/DeanWalsh/startpage" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+
+            <div class="projects-2 text-center">
+                <img src="/dist/img/John Doe Photography.jpg" alt="JohnDoePhotography.jpg">
+                <h3>John Doe Photography</h3>
+                <p>Website created for an amateur wedding photographer which incorporates HTML, SASS/CSS and Javascript. Landing page uses a carousel and the portfolio page uses gridbox CSS and also zooms the photos on the page using CSS.</p>
+                <a class="play-btn" href="/Wedding Page Project/home.html" target="_blank"><i class="fas fa-play"></i></a>
+                <a href="https://github.com/DeanWalsh/WeddingPhotographyWebsite" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="projects-3 text-center">
+                <img src="/dist/img/RR thumb.png" alt="Rigraff.jpg">
+                <h3>RigRaff.com</h3>
+                <p>Prestashop E-commerce website using PHP (Symphony Framework) and the MVC framework, Prestashop E-commerce website using PHP (Symphony Framework) and the MVC framework</p>
+                <a class="play-btn" href="https://rigraff.com" target="_blank"><i class="fas fa-play"></i></a>
+                <a><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="projects-4 text-center">
+                <i class="fas fa-thumbs-up fa-8x"></i>
+                <h3>Project 4</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi, sunt necessitatibus 
+                    ducimus reiciendis omnis voluptatem obcaecati excepturi voluptatibus recusandae.</p>
+            </div>
+        </div>
+
     </div>
+
 </section>
+
+
 <section id="about" class="text-center">
+
         <h2 class="section-title">About Me</h2>
         <div class="bottom-line"></div>
-        <div id="about-info">
-            <p>Before I started web development I was interested in the hardware and components of personal computing and 
-                it was then that I discovered HTML and CSS and the possiblities and creativity that can be produced. I started 
-                learning these new technologies and started working freelance, I currently work on e-commerce projects including 
-                large companies/chains and have began learning new technologies such as PHP (Laravel) with the intent on 
-                progressing from a frontend developer to full stack.
-             </p>
-        </div>
+
+        <div class="about-wrapper">
+
+            <div id="about-info">
+                <p>Before I started web development I was interested in the hardware and components of personal computing and 
+                    it was then that I discovered HTML and CSS and the possiblities and creativity that can be produced. I started 
+                    learning these new technologies and started working freelance, I currently work on e-commerce projects including 
+                    large companies/chains and have began learning new technologies such as PHP (Laravel) with the intent on 
+                    progressing from a frontend developer to full stack.
+                </p>
+            </div>
+
+        </div>  
+
     </div>
+
 </section>
+
+
 <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="bottom-line"></div>
+
+    <h2 class="section-title">Skills</h2>
+    <div class="bottom-line"></div>
+
+    <div class="skills-wrapper">
+
         <div id="skills-info">
+
             <div class="box-1">
                 <h3>Tools</h3>
                     <p>VS Code</p>
@@ -97,6 +137,7 @@
                     <p>MySQL<span>(In-Progress)</span> </p>
                     <p>Git <span>(In-Progress)</span></p>
             </div>
+
             <div class="box-2">
                 <h3>Web Dev</h3>
                     <p>HTML</p>
@@ -106,6 +147,7 @@
                     <p>PHP <span>(In-Progress)</span></p>
                     <p>Laravel <span>(In-Progress)</span></p>
             </div>
+
             <div class="box-3">
                 <h3>Other</h3>
                 <p>Comptia IT Fundamentals</p>
@@ -115,17 +157,25 @@
                 <p>Music-Production/Composing</p>
             </div>
         </div>
+
     </div>
+
 </section>
+
+
 <footer id=main-footer>
+
     <div class="footer-content container">
         <div class="social">
             <a href="mailto: deanwalshdev@gmail.com"><i class="far fa-envelope"></i></a>
             <a href="https://github.com/DeanWalsh" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </div>
+
     <p>&copy; DeanWalsh.dev 2021. All Rights Reserved</p>
 </footer>
+
+
       <script src="/dist/js/typewriter.js"></script>
       <script src="/dist/js/burger.js"></script>
 </body>

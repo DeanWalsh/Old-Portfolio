@@ -34,7 +34,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.2rem;
   letter-spacing: 3px;
   font-size: 2rem;
 }
@@ -147,6 +146,8 @@ input[class^='btn-']:hover {
 
 #header {
   position: fixed;
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   min-height: 6vh;
   padding: 1rem 0;
@@ -161,6 +162,9 @@ input[class^='btn-']:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header #nav-main .nav-name {
@@ -237,65 +241,73 @@ input[class^='btn-']:hover {
 }
 
 #projects-header h2 {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
-#projects-header .projects-content {
+#projects-header .projects-wrapper {
+  min-height: calc(100vh - 20rem);
+  display: -ms-grid;
+  display: grid;
+}
+
+#projects-header .projects-wrapper .projects-content {
   margin: 4rem 0;
   display: -ms-grid;
   display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
   grid-gap: 1rem;
   -ms-grid-columns: (minmax(350px, max-content))[2];
       grid-template-columns: repeat(2, minmax(350px, -webkit-max-content));
       grid-template-columns: repeat(2, minmax(350px, max-content));
 }
 
-#projects-header .projects-content img {
+#projects-header .projects-wrapper .projects-content img {
   height: 80px;
   width: 150px;
   border: solid #ffbc00 1.5px;
 }
 
-#projects-header .projects-content div h3 {
+#projects-header .projects-wrapper .projects-content div h3 {
   display: block;
 }
 
-#projects-header .projects-content .fab, #projects-header .projects-content .play-btn {
+#projects-header .projects-wrapper .projects-content .fab, #projects-header .projects-wrapper .projects-content .play-btn {
   color: #1b1b1b;
   border-color: #1b1b1b;
   margin: 1em;
 }
 
-#projects-header .projects-content .fas {
+#projects-header .projects-wrapper .projects-content .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem;
 }
 
-#projects-header .projects-content .play-btn {
+#projects-header .projects-wrapper .projects-content .play-btn {
   border-radius: 0;
 }
 
-#projects-header .projects-content .play-btn i {
+#projects-header .projects-wrapper .projects-content .play-btn i {
   margin: 0 3px;
   color: #1b1b1b;
 }
 
-#projects-header .projects-content .projects-1 {
+#projects-header .projects-wrapper .projects-content .projects-1 {
   padding: 2rem 2rem 16px;
   background: #f4f4f4;
 }
 
-#projects-header .projects-content .projects-4 {
+#projects-header .projects-wrapper .projects-content .projects-4 {
   padding: 2rem 2rem 16px;
   background: #f4f4f4;
 }
 
-#projects-header .projects-content .projects-2 {
+#projects-header .projects-wrapper .projects-content .projects-2 {
   padding: 2rem 2rem 16px;
   background: #ccc;
 }
 
-#projects-header .projects-content .projects-3 {
+#projects-header .projects-wrapper .projects-content .projects-3 {
   padding: 2rem 2rem 16px;
   background: #ccc;
 }
@@ -308,22 +320,39 @@ input[class^='btn-']:hover {
 
 #about h2 {
   bottom: 10%;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
-#about p {
-  margin-top: 6rem;
+#about .about-wrapper {
+  min-height: calc(100vh - 27rem);
+  display: -ms-grid;
+  display: grid;
+}
+
+#about .about-wrapper #about-info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#about .about-wrapper #about-info p {
   letter-spacing: .8px;
   word-spacing: 1.7px;
   font-size: 1.2em;
 }
 
 #skills {
-  min-height: 92vh;
+  min-height: calc(100vh - 7.4rem);
+}
+
+#skills .skills-wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: calc(90vh - 25rem);
 }
 
 #skills h2 {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 #skills #skills-info {
@@ -335,6 +364,8 @@ input[class^='btn-']:hover {
       grid-template-columns: repeat(3, minmax(auto, 20rem));
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #skills .box-1, #skills .box-2, #skills .box-3 {
@@ -352,7 +383,7 @@ input[class^='btn-']:hover {
 }
 
 #skills .box-1 p, #skills .box-2 p, #skills .box-3 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 #skills .box-1 p span, #skills .box-2 p span, #skills .box-3 p span {
@@ -363,7 +394,6 @@ input[class^='btn-']:hover {
 #main-footer {
   background: #1b1b1b;
   color: #fff;
-  height: 6rem;
   padding: .7rem 19rem;
 }
 
@@ -374,7 +404,6 @@ input[class^='btn-']:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -469,9 +498,9 @@ input[class^='btn-']:hover {
     margin: 4rem 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(200px, max-content))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(200px, -webkit-max-content));
-        grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
+    -ms-grid-columns: (minmax(225px, max-content))[auto-fill] !important;
+        grid-template-columns: repeat(auto-fill, minmax(225px, -webkit-max-content)) !important;
+        grid-template-columns: repeat(auto-fill, minmax(225px, max-content)) !important;
   }
   #projects-header .projects-content img {
     height: 100px;
@@ -483,10 +512,10 @@ input[class^='btn-']:hover {
   }
   #about h2 {
     bottom: 0;
-    padding-top: 5rem;
   }
   #about p {
     margin-top: 3rem;
+    padding-bottom: 3rem;
   }
   #skills #skills-info {
     display: -ms-grid;
@@ -500,11 +529,13 @@ input[class^='btn-']:hover {
     margin-top: 2.5rem;
     text-align: left;
   }
+  #skills #skills-info .box-1 p, #skills #skills-info .box-2 p, #skills #skills-info .box-3 p {
+    font-size: 1.2rem;
+  }
   #skills #skills-info .box-1 span, #skills #skills-info .box-2 span, #skills #skills-info .box-3 span {
     font-size: 0.50em;
   }
   #main-footer {
-    height: 2rem !important;
     padding: 1rem !important;
   }
   #main-footer .footer-content {
@@ -514,7 +545,6 @@ input[class^='btn-']:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -525,6 +555,49 @@ input[class^='btn-']:hover {
   }
   #main-footer .footer-content .social {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #skills-info {
+    -ms-grid-columns: (minmax(200px, 250px))[auto-fill] !important;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 250px)) !important;
+  }
+}
+
+#about p {
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-height: 540px) and (max-width: 767px) {
+  #header .nav-links li {
+    padding: 0 !important;
+    padding-bottom: 1rem !important;
+    margin-top: 1.2rem;
+  }
+  #header .nav-links li a {
+    font-size: 0.8rem;
+  }
+  #header .nav-links .active-top {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-height: 540px) and (max-width: 967px) {
+  #home .home-content h1 {
+    font-size: 2rem;
+  }
+  #home .home-content .lead {
+    font-size: 1rem;
+  }
+  #home .home-content .btn-main, #home .home-content .btn-light, #home .home-content .btn-dark {
+    padding: 0.3rem 0.8rem;
+  }
+  #home .home-content .fab, #home .home-content .far {
+    margin: 0 1rem;
+  }
+  h2 {
+    padding-top: 7rem !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

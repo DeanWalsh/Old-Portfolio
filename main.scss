@@ -4,23 +4,30 @@
 
 #header{
     position: fixed;
+    display: grid;
     width: 100%;
     min-height: 6vh;
     padding: 1rem 0;
     background-color: $dark-color;
     opacity: 0.95;
     filter: alpha(opacity=70);
+    
     #nav-main {
             display: flex;
             justify-content: space-around;
-                .nav-name {
+            align-items: center;
+                
+            .nav-name {
                     color: #fff;
                 }
+                
                 .nav-links {
                     display: flex;
+                    
                     li {
                         padding: 1rem 1.5rem;}
-                    a {
+                    
+                        a {
                         text-decoration: none;
                         letter-spacing: 3px;
                         color: white;
@@ -36,24 +43,29 @@
                 }
         }
     }
+
 #home {
     background: $bg-image no-repeat center / cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
         .home-content {
             margin:0;
             padding-top: 9.2vh;
+
             h1 {
                 font-size: 4rem;
                 line-height: 1.2;
                 color: white;
+
                 span {
                     color: $main-color;
                     font-style: italic;
                 }
             }
+
             .lead {
                 font-size: 1.6rem;
                 padding-top: 1rem;
@@ -65,95 +77,131 @@
 #projects {
     &-header {
         min-height: 100vh;
+
         h2 {
-            padding-top: 8rem;}
-        .projects-content {
-            margin: 4rem 0;
+            padding-top: 10rem;
+        }
+
+        .projects-wrapper {
+            min-height: calc(100vh - 20rem);
             display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: repeat(2, minmax(350px, max-content));
-            
-            img {
-                height: 80px;
-                width: 150px;
-                border: solid #ffbc00 1.5px;
-            }
-            div h3 {
-                display: block;
-            }
-            .fab, .play-btn {
-                color: $dark-color;
-                border-color: $dark-color;
-                margin: 1em;
-            }
-            .fas {
-                color: $main-color;
-                padding-bottom: 0.4rem;}
 
-                .play-btn {
-                    border-radius: 0;
-
-                    i {
-                        margin: 0 3px;
-                        color: $dark-color;}
+            .projects-content {
+                margin: 4rem 0;
+                display: grid;
+                align-self: center;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(2, minmax(350px, max-content));
+                
+                img {
+                    height: 80px;
+                    width: 150px;
+                    border: solid #ffbc00 1.5px;
                 }
-            .projects {
 
-                    &-1 {
-                    padding: 2rem 2rem 16px;
-                    background: $light-color;}
-                    &-4 {
-                    padding: 2rem 2rem 16px;
-                    background: $light-color;}
-                    &-2 {
-                    padding: 2rem 2rem 16px;
-                    background: $medium-color;}
-                    &-3 {
-                    padding: 2rem 2rem 16px;
-                    background: $medium-color;}
+                div h3 {
+                    display: block;
+                }
+
+                .fab, .play-btn {
+                    color: $dark-color;
+                    border-color: $dark-color;
+                    margin: 1em;
+                }
+
+                .fas {
+                    color: $main-color;
+                    padding-bottom: 0.4rem;}
+
+                    .play-btn {
+                        border-radius: 0;
+
+                        i {
+                            margin: 0 3px;
+                            color: $dark-color;}
+                    }
+
+                .projects {
+
+                        &-1 {
+                        padding: 2rem 2rem 16px;
+                        background: $light-color;}
+                        &-4 {
+                        padding: 2rem 2rem 16px;
+                        background: $light-color;}
+                        &-2 {
+                        padding: 2rem 2rem 16px;
+                        background: $medium-color;}
+                        &-3 {
+                        padding: 2rem 2rem 16px;
+                        background: $medium-color;}
+                }
             }
         }
     }
 }
+
 #about {
     min-height: 100vh;
     background-color: $dark-color;
     color: white;
-    h2 {
-        bottom: 10%;
-        padding-top: 20rem;}
-        p {
-            margin-top: 6rem;
-            letter-spacing: .8px;
-            word-spacing: 1.7px;
-            font-size: 1.2em;
+        h2 {
+            bottom: 10%;
+            padding-top: 10rem;}
+        .about-wrapper{
+
+            min-height: calc(100vh - 27rem);
+            display: grid;
+
+                #about-info {
+
+                align-self: center;
+
+                p {
+                    letter-spacing: .8px;
+                    word-spacing: 1.7px;
+                    font-size: 1.2em;
+            }
         }
     }
+}
+
 #skills {
-    min-height: 92vh;
-    h2 {
-        padding-top: 8rem;
+    min-height: calc(100vh - 7.4rem);
+
+    .skills-wrapper{
+        display: grid;
+        min-height: calc(90vh - 25rem);
     }
+
+    h2 {
+        padding-top: 10rem;
+    }
+
     #skills-info {
         display: grid;
         grid-gap: 1rem;
         margin: 4rem 0;
         grid-template-columns: repeat(3, minmax(auto, 20rem));
-        justify-content: space-around;        
+        justify-content: space-around;
+        align-self: center;
     }
+
     .box-1, .box-2, .box-3 {
         border: $dark-color solid;
         background-color: $light-color;
         padding: 2rem;
         line-height: 3.6rem;
         text-align: center;
+
         h3 {
             display: block;
             text-decoration: underline;
             margin: 0 0 3rem ;
         }
-        p{
-            font-size: 1.5rem;
+
+        p {
+            font-size: 1.4rem;
             span {
                 font-size: 1.2rem;
                 color: $main-color;
@@ -161,17 +209,18 @@
         }
     }
 }
+
 #main-footer {
     background: $dark-color;
     color: #fff;
-    height: 6rem;
     padding: .7rem 19rem;
+
     .footer-content {
         display: flex;
         justify-content: center;
-        height: 5rem;
         align-items: center;
     }
+
     p {
         text-align: center;
     }

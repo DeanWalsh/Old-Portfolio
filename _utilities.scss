@@ -1,40 +1,48 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6; 
     background-color: rgb(255, 255, 255);
 }
+
 a {
     text-decoration: none;
     color: $dark-color;
 }
+
 ul {
     list-style: none;
 }
+
 h2, h3, h4 {
     text-transform: uppercase;
 }
+
 img {
     width: 100%;
 }
+
 h3 {
     display: flex;
-    padding-top: 0.2rem;
     letter-spacing: 3px;
     font-size: 2rem;
     span {color: $main-color; padding-left: 0.3rem;}
 }
+
 #projects-header, #about-info, #skills {
     max-width: $website-width;
     padding: 0 1.5rem;
     margin: auto;
 }
+
 %btn-shared {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -42,6 +50,7 @@ h3 {
     border: solid $main-color;
     cursor: pointer;
 }
+
 .btn {
     &-main {
         @extend %btn-shared;
@@ -56,19 +65,23 @@ h3 {
         color: #f4f4f4;
         background-color: $dark-color;}
 }
+
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
     background-color: $main-color;
     border: solid $dark-color;
 }
+
 .lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
 .text-center {
     text-align: center;
 }
+
 .section-title {
     font-size: 2rem;
     display: block;
@@ -77,6 +90,7 @@ input[class^='btn-']:hover {
     font-weight: 100;
     text-transform: uppercase;
 }
+
 .bottom-line {
     height: 2px;
     width: 3rem;
@@ -84,10 +98,15 @@ input[class^='btn-']:hover {
     display: block;
     margin: 0 auto 1rem auto;
 }
+
 .fab, .fab:visited  {
     color: #f4f4f4; 
-    text-decoration: none;}
-.far {color: white;}
+    text-decoration: none;
+}
+
+.far { color: white;
+}
+
 .fab, .far, .play-btn {
     margin: 1rem;
     border: 2px #fff solid;
@@ -99,9 +118,11 @@ input[class^='btn-']:hover {
     padding: 0.5rem;
     &:hover {background: $main-color;}
 }
+
 .burger {
     margin-top: 15px;
     display: none;
+
     div {
         width: 25px;
         height: 2.7px;
