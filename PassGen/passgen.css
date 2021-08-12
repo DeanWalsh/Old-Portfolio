@@ -71,10 +71,6 @@ h1 {
   -o-transition: all 0.1s ease-out;
 }
 
-.result-container .btn:active {
-  background-color: rgb(95, 190, 0);
-}
-
 .btn {
   border: none;
   background-color: #2c2c2ccb;

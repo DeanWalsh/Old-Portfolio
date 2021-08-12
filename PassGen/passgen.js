@@ -27,6 +27,15 @@ clipboardEl.addEventListener('click', () => {
     textarea.remove()
 })
 
+clipboardEl.addEventListener('click', () => {
+    clipboardEl.style.backgroundColor="rgb(119, 180, 20)";
+
+})
+
+function btnbg() {
+    document.getElementById("clipboard").style.backgroundColor = "rgba(44, 44, 44, 0.80)"; 
+  }
+
 generateEl.addEventListener('click', () => {
     const length = +lengthEl.value
     const hasLower = lowercaseEl.checked
@@ -85,9 +94,4 @@ function getRandomNumber() {
 function getRandomSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)]
-}
-
-
-changeButtonColour = function(color) {
-
 }
