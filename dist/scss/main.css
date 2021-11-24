@@ -5,6 +5,8 @@ html {
 * {
   margin: 0;
   padding: 0;
+  -ms-scroll-snap-type: y;
+      scroll-snap-type: y;
 }
 
 body {
@@ -22,7 +24,7 @@ ul {
   list-style: none;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
@@ -30,15 +32,15 @@ img {
   width: 100%;
 }
 
-h3 {
+h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
-h3 span {
+h1 span {
   color: #ffbc00;
   padding-left: 0.3rem;
 }
@@ -149,7 +151,7 @@ input[class^='btn-']:hover {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  min-height: 6vh;
+  min-height: 10vh;
   padding: 1rem 0;
   background-color: #1b1b1b;
   opacity: 0.95;
@@ -183,6 +185,7 @@ input[class^='btn-']:hover {
 
 #header #nav-main .nav-links a {
   text-decoration: none;
+  font-size: 1.3rem;
   letter-spacing: 3px;
   color: white;
   text-transform: uppercase;
@@ -209,6 +212,7 @@ input[class^='btn-']:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-snap-align: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -238,10 +242,12 @@ input[class^='btn-']:hover {
 
 #projects-header {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 #projects-header h2 {
-  padding-top: 10rem;
+  padding-top: 18%;
+  font-size: 3rem;
 }
 
 #projects-header .projects-wrapper {
@@ -251,7 +257,7 @@ input[class^='btn-']:hover {
 }
 
 #projects-header .projects-wrapper .projects-content {
-  margin: 4rem 0;
+  margin: 1rem 0 3rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-row-align: center;
@@ -314,13 +320,15 @@ input[class^='btn-']:hover {
 
 #about {
   min-height: 100vh;
+  scroll-snap-align: start;
   background-color: #1b1b1b;
   color: white;
 }
 
 #about h2 {
   bottom: 10%;
-  padding-top: 10rem;
+  font-size: 3rem;
+  padding-top: 18%;
 }
 
 #about .about-wrapper {
@@ -338,11 +346,12 @@ input[class^='btn-']:hover {
 #about .about-wrapper #about-info p {
   letter-spacing: .8px;
   word-spacing: 1.7px;
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 #skills {
   min-height: calc(100vh - 7.4rem);
+  scroll-snap-align: start;
 }
 
 #skills .skills-wrapper {
@@ -352,7 +361,8 @@ input[class^='btn-']:hover {
 }
 
 #skills h2 {
-  padding-top: 10rem;
+  padding-top: 18%;
+  font-size: 3rem;
 }
 
 #skills #skills-info {

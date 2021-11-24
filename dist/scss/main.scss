@@ -6,7 +6,7 @@
     position: fixed;
     display: grid;
     width: 100%;
-    min-height: 6vh;
+    min-height: 10vh;
     padding: 1rem 0;
     background-color: $dark-color;
     opacity: 0.95;
@@ -29,6 +29,7 @@
                     
                         a {
                         text-decoration: none;
+                        font-size: 1.3rem;
                         letter-spacing: 3px;
                         color: white;
                         text-transform: uppercase;
@@ -49,6 +50,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    scroll-snap-align: start;
     justify-content: center;
 
         .home-content {
@@ -77,9 +79,11 @@
 #projects {
     &-header {
         min-height: 100vh;
+        scroll-snap-align: start;
 
         h2 {
-            padding-top: 10rem;
+            padding-top: 18%;
+            font-size: 3rem;
         }
 
         .projects-wrapper {
@@ -87,7 +91,7 @@
             display: grid;
 
             .projects-content {
-                margin: 4rem 0;
+                margin: 1rem 0 3rem;
                 display: grid;
                 align-self: center;
                 grid-gap: 1rem;
@@ -143,11 +147,14 @@
 
 #about {
     min-height: 100vh;
+    scroll-snap-align: start;
     background-color: $dark-color;
     color: white;
         h2 {
             bottom: 10%;
-            padding-top: 10rem;}
+            font-size: 3rem;
+            padding-top: 18%;
+        }
         .about-wrapper{
 
             min-height: calc(100vh - 27rem);
@@ -160,7 +167,7 @@
                 p {
                     letter-spacing: .8px;
                     word-spacing: 1.7px;
-                    font-size: 1.2em;
+                    font-size: 1.8em;
             }
         }
     }
@@ -168,6 +175,7 @@
 
 #skills {
     min-height: calc(100vh - 7.4rem);
+    scroll-snap-align: start;
 
     .skills-wrapper{
         display: grid;
@@ -175,7 +183,8 @@
     }
 
     h2 {
-        padding-top: 10rem;
+        padding-top: 18%;
+        font-size: 3rem;
     }
 
     #skills-info {

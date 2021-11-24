@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+$content-width: 85vw;
+$content-padding: 4rem;
+$content-height: 100vh;
+$main-color: #263038;
+$light-color: #f8f8f8;
+$medium-color: #dfdfdf;
+$dark-color: #0b0f12;
+$h1-font: 2.8rem;
+$h2-font: 2.2rem;
+$h3-font: 1.8rem;
+$letter-space: 5px;
+$line-height: 50px;
+
+
+
+/*Root*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-snap-type: y proximity;
+}
+
+#app {
+    background-color: #0b0f12;
+}
+
+.title {
+    font-size: 2.8em;
+}
+
+.sub-title {
+    font-size: 2em;
+}
+
+.description {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1.3vw;
+    border: none;
+    background-color: #263038;
+    color: #f8f8f8;
+}
+
+.fab {
+    color: $light-color;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+@mixin title {
+    color: $main-color;
+    font-size: $h2-font;
+    letter-spacing: $letter-space;
+    line-height: $line-height;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+@mixin content {
+    width: $content-width;
+    height: $content-height;
+    padding: $content-padding;
+    letter-spacing: $letter-space;
+    color: $light-color;
+    background-color: $dark-color;
+    line-height: $line-height;
+    margin: auto;
+}
